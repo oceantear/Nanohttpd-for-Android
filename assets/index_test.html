@@ -1,0 +1,35 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script type="text/javascript" src="jpicker-1.1.6/jquery-1.4.4.min.js"></script>
+    <script type="text/javascript" src="jpicker-1.1.6/jpicker-1.1.6.min.js"></script>
+    <link href="jpicker-1.1.6/css/jPicker-1.1.6.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div id="testArea">
+        <script type="text/javascript">            
+            $(document).ready(function() {
+                $('#Expandable').jPicker( {
+                    window: {
+                        expandable: true,
+                        alphaSupport: true,
+                        position: {
+                            x: '40px',
+                            y: '0px'
+                        }
+                    },
+                    images: {
+                        clientPath: "jpicker-1.1.6/images/"
+                    }
+               });
+            });
+        </script>
+
+        <div id="colorSelectors">
+            <input type="checkbox" value="Hamburgers" checked="yes" /> Hamburgers
+                <span id="Expandable"></span> <br />
+            <input type="checkbox" value="Hot Dogs" checked="yes" /> Hot Dogs
+                <span id="Expandable"></span> <br />
+        </div>
+    </div>
+</body>
+</html>
